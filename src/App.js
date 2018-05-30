@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import './App.css';
-import Nav from './components/Nav/index';
+import NavBar from './components/Nav/index';
 
 
 class App extends Component {
     render() {
         return (
             <div>
-                <Nav />
+                <NavBar />
                 <div className="container">
                     <h1>Yooo</h1>
                 </div>
