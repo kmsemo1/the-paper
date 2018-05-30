@@ -1,35 +1,20 @@
 import React from 'react';
 import "./Nav.css";
-import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
 
 class NavBar extends React.Component {
 
+// glyphicon from https://useiconic.com/open/
+
     render() {
         return (
-            <Nav>
-            <Navbar>
-                <Navbar.Header>
-                    <Navbar.Brand>
-                        <a href="#home">React-Bootstrap</a>
-                    </Navbar.Brand>
-                </Navbar.Header>
-            </Navbar>
+            <nav className="navbar navbar-light bg-light">
+                <button type="button" className="btn btn-light">
+                    <span className="oi oi-menu"></span>
+                </button>
 
-            
-                <NavItem eventKey={1} href="#">
-                    Link
-</NavItem>
-                <NavItem eventKey={2} href="#">
-                    Link
-</NavItem>
-                <NavDropdown eventKey={3} title="Dropdown" id="basic-nav-dropdown">
-                    <MenuItem eventKey={3.1}>Action</MenuItem>
-                    <MenuItem eventKey={3.2}>Another action</MenuItem>
-                    <MenuItem eventKey={3.3}>Something else here</MenuItem>
-                    <MenuItem divider />
-                    <MenuItem eventKey={3.4}>Separated link</MenuItem>
-                </NavDropdown>
-            </Nav>
+                <span className="oi oi-icon-name" title="icon name" aria-hidden="true"></span>
+                <span className="navbar-brand mb-0 h1">Navbar</span>
+            </nav>
         )
     }
 }
